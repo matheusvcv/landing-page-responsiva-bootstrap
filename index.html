@@ -11,30 +11,34 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand" href="#">fruta & fruto</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Receitas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Quem Somos?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1">Contatos</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand" href="#">fruta & fruto</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Receitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quem Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1">Contatos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
 
-  <div class="bd-example">
+<main>
+
+  <section class="carrossel">
     <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -63,14 +67,25 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
+  </carrossel>
 
-  <h1 class="text-center fonte-titulo cor-especial pt-5">Receitas para economizar e ganhar saúde</h1>
-  <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
+  <section id="titulo">
+    <h1 class="text-center fonte-titulo cor-especial pt-5">Receitas para economizar e ganhar saúde</h1>
+    <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
+  </section>
 
-  <img src="src/img/receita-abacate.jpg" alt="tigela com salada de abacate, vista superior">
-  <h3>Tigela de abacate</h3>
-  <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+  <section id="receitas">
+    <div class="card borda-cor-especial" style="width: 18rem;">
+      <img src="src/img/receita-abacate.jpg" class="card-img-top" alt="tigela com salada de abacate, vista superior">
+      <div class="card-body">
+        <h5 class="card-title">Tigela de abacate</h5>
+        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+        <a href="#" class="btn botao-cor-especial">Veja a receita</a>
+      </div>
+    </div>
+  </section>
+
+</main>
 
   <img src="src/img/receita-kiwi.jpg" alt="tigela de mingau com kiwi, vista superior">
   <h3>Salada de kiwi</h3>
