@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#">fruta & fruto</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
             <a class="nav-link" href="#">Quem Somos?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1">Contatos</a>
+            <a class="nav-link" data-toggle="modal" data-target="#modal-contato" href="#" tabindex="-1">Contatos</a>
           </li>
         </ul>
       </div>
@@ -137,6 +137,42 @@
   </section>
 
 </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em Contato!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Nome Completo:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite aqui seu nome completo">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Endereço de E-Mail:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comentário:</label>
+                <textarea class="form-control" placeholder="Deixe aqui seu comentário!" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn botao-cor-especial">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
 
